@@ -36,7 +36,7 @@ The system reads payment data from a user-provided Excel file and inserts/update
 
 5. **Sequential Table Updates** – Executes in strict order:
    - `CHECK_HDR` → `COUNTERSTBL` → `CHECK_LINE` → `COUNTERSTBL` → `ACCOUNT_AR_AP` → `COUNTERSTBL`
-   - This is based on logical deduction, see [methodology.md](https://github.com/joseph-tsang-topcast/AR-Fund-In/blob/ac68d047f826f71e78683262887d4da060a615df/methodology.md)
+   - This is based on logical deduction, see [methodology.md](https://github.com/josephtsang2012/ar_fund_in_automation/blob/dcb5322e992124da49df8a0ac03eb67ed3635c31/methodology.md)
 
 6. **Transaction Commit** – Commits all changes atomically; rolls back entirely if any step fails
 
