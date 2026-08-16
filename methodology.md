@@ -9,7 +9,7 @@ A systematic approach was used to identify the schema/tables involved in the **A
 - Run a snapshot of the `COUNTERSTBL` (counter) table shortly **before** the experiment.
 - Have the user department create an AR receipt in P2000 during a low-usage period (e.g. lunchtime).
 - Run another snapshot of the `COUNTERSTBL` table shortly **after** the experiment.
-- Compare the database state before and after the experiment to identify tables that were created or updated by the designated user during that window (see [all_tables.sql](https://github.com/joseph-tsang-topcast/AR-Fund-In/blob/ac68d047f826f71e78683262887d4da060a615df/all_tables.sql), [added_tables.sql](https://github.com/joseph-tsang-topcast/AR-Fund-In/blob/ac68d047f826f71e78683262887d4da060a615df/added_tables.sql), and [updated_tables.sql](https://github.com/joseph-tsang-topcast/AR-Fund-In/blob/ac68d047f826f71e78683262887d4da060a615df/updated_tables.sql).
+- Compare the database state before and after the experiment to identify tables that were created or updated by the designated user during that window (see [all_tables.sql](https://github.com/josephtsang2012/ar_fund_in_automation/blob/dcb5322e992124da49df8a0ac03eb67ed3635c31/all_tables.sql), [added_tables.sql](https://github.com/josephtsang2012/ar_fund_in_automation/blob/dcb5322e992124da49df8a0ac03eb67ed3635c31/added_tables.sql), and [updated_tables.sql](https://github.com/josephtsang2012/ar_fund_in_automation/blob/dcb5322e992124da49df8a0ac03eb67ed3635c31/updated_tables.sql).
 - After reviewing the impacted tables in detail, tables unrelated to the AR Fund In process were excluded. The scope was narrowed to the following core tables:
   - `ACCOUNT_AR_AP`
   - `CHECK_HDR`
